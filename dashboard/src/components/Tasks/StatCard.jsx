@@ -9,7 +9,7 @@ const pulse = keyframes`
 export default function StatCard({ label, value, note, dot = "#6366f1" }) {
   return (
     <Box sx={{
-      width: "230px", height: "100%", minHeight: 140,
+      width: "250px", height: "100%", minHeight: 140,
       position: "relative", borderRadius: "16px",
       border: "1px solid rgba(255,255,255,0.05)",
       background: "linear-gradient(145deg, #0f172a 0%, #0d1526 100%)",
