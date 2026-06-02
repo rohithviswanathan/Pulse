@@ -10,10 +10,13 @@ export default function Habits() {
       
       {/* Top Layer: Stats Summary Grid */}
       <Grid container spacing={3} sx={{ mb: 3 }}>
-        {habitStats.map((stat) => (
-          <Grid item xs={12} sm={6} md={4} key={stat.label}>
-            <HabitStatCard {...stat} />
-          </Grid>
+        {habitStats.map((stat, index) => (
+            <Grid item xs={12} sm={6} md={4} key={stat.label}>
+              <HabitStatCard
+                {...stat}
+                index={index}
+              />
+            </Grid>
         ))}
       </Grid>
 
