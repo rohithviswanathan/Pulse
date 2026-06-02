@@ -18,7 +18,7 @@ export default function Notes() {
       }}
     >
       {/* Top Layer: Stats Grid */}
-      <Grid container spacing={3} sx={{ mb: 3 }}>
+      <Grid container spacing={6} sx={{ mb: 3 }}>
         {noteStats.map((item) => (
           <Grid
             item
