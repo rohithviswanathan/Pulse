@@ -113,61 +113,6 @@ export default function Topbar() {
           </Typography>
         </Box>
 
-        {/* Search */}
-        <Paper
-          elevation={0}
-          sx={{
-            display: "flex",
-            alignItems: "center",
-
-            px: 2.5,
-            py: 1.1,
-
-            width: {
-              xs: 220,
-              sm: 300,
-              md: 380,
-            },
-
-            backgroundColor: "#0f172a",
-            border: "1px solid rgba(255,255,255,0.06)",
-            borderRadius: "16px",
-
-            transition: "all 0.2s ease",
-
-            "&:hover": {
-              borderColor: "rgba(255,255,255,0.12)",
-              backgroundColor: "#111c31",
-            },
-
-            "&:focus-within": {
-              borderColor: current.color,
-              boxShadow: `0 0 0 1px ${current.color}40`,
-            },
-          }}
-        >
-          <SearchIcon
-            sx={{
-              color: "#64748b",
-              fontSize: 20,
-            }}
-          />
-
-          <InputBase
-            placeholder="Search..."
-            sx={{
-              ml: 1.25,
-              flex: 1,
-              color: "#e2e8f0",
-
-              "& input::placeholder": {
-                color: "#64748b",
-                opacity: 1,
-              },
-            }}
-          />
-        </Paper>
-
         {/* User Section */}
         <Box
           sx={{
@@ -182,6 +127,7 @@ export default function Topbar() {
               width: 44,
               height: 44,
               bgcolor: current.color,
+              color: "#f8fafc",
               fontWeight: 700,
               fontSize: "0.95rem",
               boxShadow: `0 0 20px ${current.color}40`,
