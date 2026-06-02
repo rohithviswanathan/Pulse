@@ -9,7 +9,7 @@ export default function Habits() {
     <Box sx={{ width: "100%", p: 3, backgroundColor: "#020617", minHeight: "100vh" }}>
       
       {/* Top Layer: Stats Summary Grid */}
-      <Grid container spacing={3} sx={{ mb: 3 }}>
+      <Grid container spacing={6} sx={{ mb: 3 }}>
         {habitStats.map((stat, index) => (
             <Grid item xs={12} sm={6} md={4} key={stat.label}>
               <HabitStatCard
