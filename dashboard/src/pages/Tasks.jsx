@@ -20,7 +20,7 @@ export default function Tasks() {
   return (
     <Box sx={{ width: "100%", p: 3 }}>
 
-      <Grid container spacing={3} sx={{ width: "100%", m: 0, mb: 3 }}>
+      <Grid container spacing={6} sx={{ width: "100%", m: 0, mb: 3 }}>
         {stats.map((s) => (
           <Grid item xs={12} sm={6} md={3} key={s.label}>
             <StatCard {...s} />
